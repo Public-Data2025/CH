@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pakistani-Owned Businesses</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+        h1 { text-align: center; }
+        .tabs { display: flex; margin-bottom: 10px; cursor: pointer; }
+        .tab { padding: 10px 20px; border: 1px solid #ccc; border-bottom: none; background: #eee; }
+        .tab.active { background: white; font-weight: bold; }
+        .tab-content { display: none; border: 1px solid #ccc; padding: 15px; background: white; }
+        .tab-content.active { display: block; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #e0e0e0; }
+    </style>
+</head>
+<body>
+<h1>Pakistani-Owned Businesses in CH or Nearby</h1>
+<div class="tabs">
+<div class="tab" onclick="showTab(0)" id="tab0">Businesses</div><div class="tab" onclick="showTab(1)" id="tab1">Pakistani Brands</div></div>
+<div id="tabContents">
+<div class="tab-content" id="content0"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>S. No</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Address</th>
+      <th>Website</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Restaurant Miyanwali</td>
+      <td>Restaurant</td>
+      <td>Rue Chaucrau 14, 1003 Lausanne</td>
+      <td>mianwali.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Restaurant Sultan</td>
+      <td>Restaurant</td>
+      <td>Rue de Rive 22, 1260 Nyon</td>
+      <td>sultanindian.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Made in Punjab</td>
+      <td>Restaurant</td>
+      <td>Vordere Hauptgasse 47, 4800 Zofingen</td>
+      <td>madeinpunjab.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Seebach Asian Bazar</td>
+      <td>Grocery Store</td>
+      <td>Schaffhauserstrasse 411, 8050 Zürich</td>
+      <td>-</td>
+      <td>Near Oerlikon Train Station</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Safran</td>
+      <td>Restaurant</td>
+      <td>Bielstrasse 3, 4500 Solothurn</td>
+      <td>safran-solothurn.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Rajpoute</td>
+      <td>Restaurant</td>
+      <td>1553 Rue de Genève, 01210 Ornex, France</td>
+      <td>restaurant-rajpoute.fr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Rajpoute</td>
+      <td>Restaurant</td>
+      <td>Rue de Carouge 77, 1205 Genève</td>
+      <td>rajpoute.ch</td>
+      <td>Please confirm ownership?</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>À Royal Spice</td>
+      <td>Restaurant</td>
+      <td>51 Rue des Bains, 01220 Divonne-les-Bains, France</td>
+      <td>aroyalspice.fr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Multibazaar</td>
+      <td>Grocery Store</td>
+      <td>Rue de Fribourg 12, 1201 Genève</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Pâquis Bazar</td>
+      <td>Grocery Store</td>
+      <td>Rue de Monthoux 54, 1201 Genève</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>The Indus</td>
+      <td>Restaurant</td>
+      <td>Rue Docteur-Alfred-Vincent 13, 1201 Genève</td>
+      <td>theindus.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Salpers(.)ch</td>
+      <td>Online Grocery</td>
+      <td>Zürichstrasse 46, 8303 Bassersdorf</td>
+      <td>salpers.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Lahore Food</td>
+      <td>Restaurant</td>
+      <td>Rdpt de la Jonction 8, 1205 Genève</td>
+      <td>lahorefood.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Barkat Cash and Carry</td>
+      <td>Grocery Store</td>
+      <td>Birmensdorferstrasse 141, 8003 Zürich</td>
+      <td>barkat.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Barkat(.)ch</td>
+      <td>Online Grocery</td>
+      <td>Birmensdorferstrasse 141, 8003 Zürich</td>
+      <td>barkat.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Bombay Karachi</td>
+      <td>Restaurant</td>
+      <td>Stampfenbachstrasse 32, 8006 Zürich</td>
+      <td>bombaykarachi.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Sahar</td>
+      <td>Restaurant</td>
+      <td>Richtipl. 3, 8304 Wallisellen - Zurich</td>
+      <td>sahar.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Curry Corner</td>
+      <td>Restaurant</td>
+      <td>Beckenhofstrasse 16, 8006 Zürich</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Restaurant Shalimar</td>
+      <td>Restaurant</td>
+      <td>Bahnhofstrasse 21, 3860 Meiringen</td>
+      <td>restaurantshalimar.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tandoori Restaurant Interlaken</td>
+      <td>Restaurant</td>
+      <td>Centralstrasse 18, 3800 Interlaken</td>
+      <td>tandoorinterlaken.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Kashmir</td>
+      <td>Restaurant</td>
+      <td>Bahnhofstrasse 35, 3800 Interlaken</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Restaurant Kashmir Mahal</td>
+      <td>Restaurant</td>
+      <td>Höheweg 90, 3800 Interlaken</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Les Jardins de Malyar</td>
+      <td>Restaurant</td>
+      <td>1 Rue de Crozet, 01630 Saint-Genis-Pouilly, France</td>
+      <td>lesjardinsdemalyar.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Madhura Marché</td>
+      <td>Grocery Store</td>
+      <td>Rue Liotard 56, 1202 Genève</td>
+      <td>madhuramarche.com</td>
+      <td>Please confirm?</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Madhura Marché</td>
+      <td>Grocery Store</td>
+      <td>Rue de la Combe 7, 1260 Nyon</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Kashmir Restaurant Vevey</td>
+      <td>Restaurant</td>
+      <td>Rue de l'Hôtel-de-Ville 21, 1800 Vevey</td>
+      <td>kashmir-vevey.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Kashmir</td>
+      <td>Restaurant</td>
+      <td>Rue de la Paix 25, 1020 Renens</td>
+      <td>restaurant-kashmir.ch</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="tab-content" id="content1"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>S. No</th>
+      <th>Brand Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Shan Foods</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>National Foods Limited</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Tapal Tea</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mitchell's</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Shezan International</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Khanum (Butter Ghee)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Laziza</td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<script>
+function showTab(index) {
+    var tabs = document.querySelectorAll('.tab');
+    var contents = document.querySelectorAll('.tab-content');
+    tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        contents[i].classList.toggle('active', i === index);
+    });
+}
+document.addEventListener('DOMContentLoaded', () => showTab(0));
+</script>
+
+</body></html>
